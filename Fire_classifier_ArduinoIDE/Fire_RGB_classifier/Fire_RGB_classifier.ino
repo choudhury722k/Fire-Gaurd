@@ -33,7 +33,7 @@ byte tensorArena[tensorArenaSize];
 // array to map gesture index to a name
 const char* CLASSES[] = {
   "fire",
-  "room"
+  "no fire"
 };
 
 #define NUM_CLASSES (sizeof(CLASSES) / sizeof(CLASSES[0]))
@@ -41,6 +41,8 @@ const char* CLASSES[] = {
 void setup() {
   Serial.begin(9600);
   while (!Serial) {};
+
+  pinMode(2,OUTPUT);
 
   if (!APDS.begin()) {
     Serial.println("Error initializing APDS9960 sensor.");
@@ -88,10 +90,6 @@ void loop() {
     tflInputTensor->data.f[1] = greenRatio;
     tflInputTensor->data.f[2] = blueRatio;
 
-    // Serial.println(redRatio);
-    // Serial.println(greenRatio);
-    // Serial.println(blueRatio);
-
     // Run inferencing
     TfLiteStatus invokeStatus = tflInterpreter->Invoke();
     if (invokeStatus != kTfLiteOk) {
@@ -101,7 +99,7 @@ void loop() {
     }
 
     // Output results
-    for (int i = 0; i < NUM_CLASSES; i++) {
+    for (int i = 0; i < 2; i++) {
       Serial.print(CLASSES[i]);
       Serial.print(" ");
       Serial.print(int(tflOutputTensor->data.f[i] * 100));
@@ -109,7 +107,14 @@ void loop() {
     }
     Serial.println();
 
-    delay(1000);
+    if(int(tflOutputTensor->data.f[0] * 100) > 95){
+      tone(2,1000);
+    }
+    else if(int(tflOutputTensor->data.f[1] * 100) > 95){
+      noTone(2);
+    }
+
+    delay(2500);
 
     // Wait for the object to be moved away
     while (!APDS.proximityAvailable() || (APDS.readProximity() == 0)) {}
