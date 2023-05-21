@@ -166,10 +166,19 @@ int main(void)
   {
     /* USER CODE END WHILE */
 	  // Fill input buffer (use test value)
-	  for (uint32_t i = 0; i < AI_FIRE_IN_1_SIZE; i++)
-	  {
-		((ai_float *)in_data)[i] = (ai_float)2.0f;
-	  }
+//	  for (uint32_t i = 0; i < AI_FIRE_IN_1_SIZE; i++)
+//	  {
+//		((ai_float *)in_data)[i] = (ai_float)2.0f;
+//	  }
+//	  Room
+//	  ((ai_float *)in_data)[0] = 0.34;
+//	  ((ai_float *)in_data)[1] = 0.32;
+//	  ((ai_float *)in_data)[2] = 0.32;
+//	  Fire
+	  ((ai_float *)in_data)[0] = 0.54;
+	  ((ai_float *)in_data)[1] = 0.28;
+	  ((ai_float *)in_data)[2] = 0.18;
+
 
 	  // Get current timestamp
 	  timestamp = htim16.Instance->CNT;
