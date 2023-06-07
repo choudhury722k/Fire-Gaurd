@@ -1,10 +1,46 @@
-14:33:49 **** Incremental Build of configuration Debug for project Blue_pill_GSM_RTOS ****
+22:53:33 **** Incremental Build of configuration Debug for project Blue_pill_GSM_RTOS ****
 make -j12 all 
-arm-none-eabi-size   Blue_pill_GSM_RTOS.elf 
-   text	   data	    bss	    dec	    hex	filename
-   8280	    120	   1664	  10064	   2750	Blue_pill_GSM_RTOS.elf
-Finished building: default.size.stdout
- 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/my_gsm.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/my_gsm.d" -MT"Core/Src/my_gsm.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/my_gsm.o"
+../Core/Src/my_gsm.c: In function 'gsm_init':
+../Core/Src/my_gsm.c:11:7: error: 'gsm' undeclared (first use in this function)
+   11 |   if (gsm.inited == 1)
+      |       ^~~
+../Core/Src/my_gsm.c:11:7: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/my_gsm.c:15:3: warning: implicit declaration of function 'HAL_GPIO_WritePin' [-Wimplicit-function-declaration]
+   15 |   HAL_GPIO_WritePin(_GSM_KEY_GPIO, _GSM_KEY_PIN, GPIO_PIN_SET);
+      |   ^~~~~~~~~~~~~~~~~
+../Core/Src/my_gsm.c:15:21: error: '_GSM_KEY_GPIO' undeclared (first use in this function)
+   15 |   HAL_GPIO_WritePin(_GSM_KEY_GPIO, _GSM_KEY_PIN, GPIO_PIN_SET);
+      |                     ^~~~~~~~~~~~~
+../Core/Src/my_gsm.c:15:36: error: '_GSM_KEY_PIN' undeclared (first use in this function)
+   15 |   HAL_GPIO_WritePin(_GSM_KEY_GPIO, _GSM_KEY_PIN, GPIO_PIN_SET);
+      |                                    ^~~~~~~~~~~~
+../Core/Src/my_gsm.c:15:50: error: 'GPIO_PIN_SET' undeclared (first use in this function)
+   15 |   HAL_GPIO_WritePin(_GSM_KEY_GPIO, _GSM_KEY_PIN, GPIO_PIN_SET);
+      |                                                  ^~~~~~~~~~~~
+In file included from ../Core/Src/my_gsm.c:8:
+../Core/Inc/my_gsm.h:34:23: warning: implicit declaration of function 'HAL_Delay' [-Wimplicit-function-declaration]
+   34 | #define gsm_delay(x)  HAL_Delay(x)
+      |                       ^~~~~~~~~
+../Core/Src/my_gsm.c:16:3: note: in expansion of macro 'gsm_delay'
+   16 |   gsm_delay(3000);
+      |   ^~~~~~~~~
+../Core/Src/my_gsm.c:18:3: warning: implicit declaration of function 'atc_init' [-Wimplicit-function-declaration]
+   18 |   atc_init(&gsm.atc, "GSM ATC", _GSM_USART, gsm_found);
+      |   ^~~~~~~~
+../Core/Src/my_gsm.c:18:33: error: '_GSM_USART' undeclared (first use in this function)
+   18 |   atc_init(&gsm.atc, "GSM ATC", _GSM_USART, gsm_found);
+      |                                 ^~~~~~~~~~
+../Core/Src/my_gsm.c:18:45: error: 'gsm_found' undeclared (first use in this function)
+   18 |   atc_init(&gsm.atc, "GSM ATC", _GSM_USART, gsm_found);
+      |                                             ^~~~~~~~~
+../Core/Src/my_gsm.c:19:7: warning: implicit declaration of function 'atc_addSearch' [-Wimplicit-function-declaration]
+   19 |   if (atc_addSearch(&gsm.atc, "POWER DOWN\r\n") == false)
+      |       ^~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:43: Core/Src/my_gsm.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
 
-14:33:49 Build Finished. 0 errors, 0 warnings. (took 345ms)
+22:53:34 Build Failed. 8 errors, 4 warnings. (took 1s.258ms)
 

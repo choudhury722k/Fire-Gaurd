@@ -15,90 +15,58 @@
   *
   ******************************************************************************
   */
-/* USER CODE END Header */
-/* Includes ------------------------------------------------------------------*/
+
 #include "main.h"
 #include <stdio.h>
-/* Private includes ----------------------------------------------------------*/
-/* USER CODE BEGIN Includes */
+#include "my_gsm.h"
 
-/* USER CODE END Includes */
-
-/* Private typedef -----------------------------------------------------------*/
-/* USER CODE BEGIN PTD */
-
-/* USER CODE END PTD */
-
-/* Private define ------------------------------------------------------------*/
-/* USER CODE BEGIN PD */
-/* USER CODE END PD */
-
-/* Private macro -------------------------------------------------------------*/
-/* USER CODE BEGIN PM */
-
-/* USER CODE END PM */
-
-/* Private variables ---------------------------------------------------------*/
 UART_HandleTypeDef huart1;
 
-/* USER CODE BEGIN PV */
-
-/* USER CODE END PV */
-
-/* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_USART1_UART_Init(void);
-/* USER CODE BEGIN PFP */
 
-/* USER CODE END PFP */
+char Test[2] = "AT";
+char Reply[2] = "";
 
-/* Private user code ---------------------------------------------------------*/
-/* USER CODE BEGIN 0 */
+char Stext[] = "AT+CMGF=1";
+char Cnum[] = "AT+CMGS=\"+918144109993\"\r";
+char Msg[] = "Hello";
+char End[] = "26";
 
-/* USER CODE END 0 */
-
-/**
-  * @brief  The application entry point.
-  * @retval int
-  */
 int main(void)
 {
-  /* USER CODE BEGIN 1 */
+
+  gsm_init();
+//  gsm_power(true);
+//  gsm_waitForRegister(30);
+//  gsm_msg_send("+98xxxxxxx", "TEST MSG 1");
+//  while (1){
+//		gsm_loop();
+//  }
+
   char buf[50];
   uint8_t num = 0;
   int buf_len = 0;
 
-  /* USER CODE END 1 */
-
-  /* MCU Configuration--------------------------------------------------------*/
-
-  /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
-  HAL_Init();
-
-  /* USER CODE BEGIN Init */
-
-  /* USER CODE END Init */
-
-  /* Configure the system clock */
   SystemClock_Config();
 
-  /* USER CODE BEGIN SysInit */
-
-  /* USER CODE END SysInit */
-
-  /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_USART1_UART_Init();
-  /* USER CODE BEGIN 2 */
 
-  /* USER CODE END 2 */
+  HAL_UART_Transmit(&huart1, (uint8_t *)Test, 2, 10);
+  HAL_UART_Receive(&huart1, (uint8_t *)Reply, 2, 10);
+  if (strcmp(Reply, "OK")){
+	  HAL_UART_Transmit(&huart1, (uint8_t *)Stext, strlen(Stext), 10);
+	  HAL_UART_Transmit(&huart1, (uint8_t *)Cnum, strlen(Cnum), 10);
+	  HAL_UART_Transmit(&huart1, (uint8_t *)Msg, strlen(Msg), 10);
+	  HAL_UART_Transmit(&huart1, (uint8_t *)End, strlen(End), 10);
+	  HAL_Delay(1000);
+  }
 
-  /* Infinite loop */
-  /* USER CODE BEGIN WHILE */
   while (1)
   {
-    /* USER CODE END WHILE */
+
 	buf_len = sprintf(buf,"Welcome to Testing! Counting = %d\r\n",num);
 	HAL_UART_Transmit(&huart1, (uint8_t *)buf, buf_len, 100);
 	HAL_Delay(500);
@@ -106,9 +74,9 @@ int main(void)
 
 //	uint8_t buffer[4];
 //	HAL_UART_Receive(&huart1, buffer, sizeof(buffer), HAL_MAX_DELAY);
-    /* USER CODE BEGIN 3 */
+
   }
-  /* USER CODE END 3 */
+
 }
 
 /**

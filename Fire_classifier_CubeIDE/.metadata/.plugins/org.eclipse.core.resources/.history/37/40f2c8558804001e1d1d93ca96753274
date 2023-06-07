@@ -1,0 +1,19 @@
+/*
+ * my_gsm.h
+ *
+ *  Created on: 06-Jun-2023
+ *      Author: SOUMYA
+ */
+
+#ifndef INC_MY_GSM_H_
+#define INC_MY_GSM_H_
+
+#define _GSM_MAIN_POWER                 1       //  control gsm main power
+#define _GSM_SIM_DETECTOR               1       //  use this feature when the SIM card holder has the ability to detect the SIM card
+#define _GSM_DEBUG                      1       //  use printf debug
+#define _GSM_CALL                       0       //  enable call
+#define _GSM_MSG                        1       //  enable message
+#define _GSM_GPRS                       1       //  enable gprs
+#define _GSM_BLUETOOTH                  0       //  enable bluetooth , coming soon
+
+#endif /* INC_MY_GSM_H_ */
