@@ -19,63 +19,40 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 
-/* Private includes ----------------------------------------------------------*/
-/* USER CODE BEGIN Includes */
 #include <stdio.h>
 
 #include "ai_datatypes_defines.h"
 #include "ai_platform.h"
 #include "fire.h"
 #include "fire_data.h"
-/* USER CODE END Includes */
 
-/* Private typedef -----------------------------------------------------------*/
-/* USER CODE BEGIN PTD */
-
-/* USER CODE END PTD */
-
-/* Private define ------------------------------------------------------------*/
-/* USER CODE BEGIN PD */
-/* USER CODE END PD */
-
-/* Private macro -------------------------------------------------------------*/
-/* USER CODE BEGIN PM */
-
-/* USER CODE END PM */
-
-/* Private variables ---------------------------------------------------------*/
 CRC_HandleTypeDef hcrc;
 
 TIM_HandleTypeDef htim16;
 
 UART_HandleTypeDef huart2;
 
-/* USER CODE BEGIN PV */
-
-/* USER CODE END PV */
-
-/* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_USART2_UART_Init(void);
 static void MX_CRC_Init(void);
 static void MX_TIM16_Init(void);
-/* USER CODE BEGIN PFP */
 
-/* USER CODE END PFP */
+char Test[2] = "AT";
+char Reply[2] = "";
 
-/* Private user code ---------------------------------------------------------*/
-/* USER CODE BEGIN 0 */
+char Stext[] = "AT+CMGF=1";
+char Cnum[] = "AT+CMGS=\"+918144109993\"\r";
+char Msg[] = "Fire Alert";
+char End[] = "26";
 
-/* USER CODE END 0 */
-
-/**
-  * @brief  The application entry point.
-  * @retval int
-  */
 int main(void)
 {
-  /* USER CODE BEGIN 1 */
+
+  char alert_buf[50];
+  uint8_t num = 0;
+  int alert_buf_len = 0;
+
   char buf[50];
   int buf_len = 0;
   ai_error ai_err;
@@ -110,30 +87,18 @@ int main(void)
   ai_output[0].n_batches = 1;
   ai_output[0].data = AI_HANDLE_PTR(out_data);
 
-  /* USER CODE END 1 */
-
-  /* MCU Configuration--------------------------------------------------------*/
-
   /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
   HAL_Init();
 
-  /* USER CODE BEGIN Init */
-
-  /* USER CODE END Init */
-
   /* Configure the system clock */
   SystemClock_Config();
-
-  /* USER CODE BEGIN SysInit */
-
-  /* USER CODE END SysInit */
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_USART2_UART_Init();
   MX_CRC_Init();
   MX_TIM16_Init();
-  /* USER CODE BEGIN 2 */
+
   // Start timer/counter
   HAL_TIM_Base_Start(&htim16);
 
@@ -200,12 +165,25 @@ int main(void)
 						htim16.Instance->CNT - timestamp);
 	  HAL_UART_Transmit(&huart2, (uint8_t *)buf, buf_len, 100);
 
+	  if(y_val > 0.9){
+		  HAL_UART_Transmit(&huart2, (uint8_t *)Test, 2, 10);
+		  HAL_UART_Receive(&huart2, (uint8_t *)Reply, 2, 10);
+		  if (strcmp(Reply, "OK")){
+			  HAL_UART_Transmit(&huart2, (uint8_t *)Stext, strlen(Stext), 10);
+			  HAL_UART_Transmit(&huart2, (uint8_t *)Cnum, strlen(Cnum), 10);
+			  HAL_UART_Transmit(&huart2, (uint8_t *)Msg, strlen(Msg), 10);
+			  HAL_UART_Transmit(&huart2, (uint8_t *)End, strlen(End), 10);
+			  HAL_Delay(1000);
+		   }
+	  }
+
+
+
+
 	  // Wait before doing it again
 	  HAL_Delay(500);
 
-    /* USER CODE BEGIN 3 */
   }
-  /* USER CODE END 3 */
 }
 
 /**
