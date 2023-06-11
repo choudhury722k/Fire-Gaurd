@@ -1,5 +1,4 @@
-/* USER CODE BEGIN Header */
-/**
+/*
   ******************************************************************************
   * @file           : main.c
   * @brief          : Main program body
@@ -14,9 +13,8 @@
   * If no LICENSE file comes with this software, it is provided AS-IS.
   *
   ******************************************************************************
-  */
-/* USER CODE END Header */
-/* Includes ------------------------------------------------------------------*/
+ */
+
 #include "main.h"
 
 #include <stdio.h>
@@ -46,12 +44,7 @@ char Cnum[] = "AT+CMGS=\"+918144109993\"\r";
 char Msg[] = "Fire Alert";
 char End[] = "26";
 
-int main(void)
-{
-
-  char alert_buf[50];
-  uint8_t num = 0;
-  int alert_buf_len = 0;
+int main(void){
 
   char buf[50];
   int buf_len = 0;
