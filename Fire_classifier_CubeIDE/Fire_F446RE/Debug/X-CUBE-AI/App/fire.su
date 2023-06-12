@@ -1,0 +1,9 @@
+../X-CUBE-AI/App/fire.c:395:9:fire_configure_activations	24	static
+../X-CUBE-AI/App/fire.c:428:9:fire_configure_weights	24	static
+../X-CUBE-AI/App/fire.c:467:9:ai_fire_get_info	136	static
+../X-CUBE-AI/App/fire.c:514:10:ai_fire_get_error	16	static
+../X-CUBE-AI/App/fire.c:520:10:ai_fire_create	24	static
+../X-CUBE-AI/App/fire.c:530:11:ai_fire_destroy	16	static
+../X-CUBE-AI/App/fire.c:536:9:ai_fire_init	24	static
+../X-CUBE-AI/App/fire.c:553:8:ai_fire_run	24	static
+../X-CUBE-AI/App/fire.c:560:8:ai_fire_forward	16	static

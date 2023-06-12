@@ -1,7 +1,7 @@
-00:47:06 **** Incremental Build of configuration Debug for project Fire_NUCLEO_L432KC ****
+16:15:44 **** Incremental Build of configuration Debug for project Fire_L432KC ****
 make -j12 all 
-arm-none-eabi-size   Fire_NUCLEO_L432KC.elf 
+arm-none-eabi-size   Fire_L432KC.elf 
    text	   data	    bss	    dec	    hex	filename
-  36168	   2200	   2992	  41360	   a190	Fire_NUCLEO_L432KC.elf
+  36016	   2200	   2992	  41208	   a0f8	Fire_L432KC.elf
 Finished building: default.size.stdout
  

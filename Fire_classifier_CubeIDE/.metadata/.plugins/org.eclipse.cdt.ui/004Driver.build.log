@@ -1,0 +1,23 @@
+14:58:10 **** Incremental Build of configuration Debug for project 004Driver ****
+make -j12 all 
+arm-none-eabi-gcc "../bsp/apds9960.c" -mcpu=cortex-m4 -std=gnu11 -g -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -c -I../Inc -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/004Driver/Drivers/Inc" -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/004Driver/bsp" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"bsp/apds9960.d" -MT"bsp/apds9960.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "bsp/apds9960.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -c -I../Inc -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/004Driver/Drivers/Inc" -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/004Driver/bsp" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -c -I../Inc -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/004Driver/Drivers/Inc" -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/004Driver/bsp" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
+../bsp/apds9960.c: In function 'APDS9960_RGB_INIT':
+../bsp/apds9960.c:79:1: warning: control reaches end of non-void function [-Wreturn-type]
+   79 | }
+      | ^
+arm-none-eabi-gcc -o "004Driver.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\SOUMYA\Desktop\Fire-Gaurd\Fire_classifier_CubeIDE\004Driver\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="004Driver.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 004Driver.elf
+ 
+arm-none-eabi-size   004Driver.elf 
+arm-none-eabi-objdump -h -S  004Driver.elf  > "004Driver.list"
+   text	   data	    bss	    dec	    hex	filename
+  10344	    128	   1648	  12120	   2f58	004Driver.elf
+Finished building: default.size.stdout
+ 
+Finished building: 004Driver.list
+ 
+
+14:58:11 Build Finished. 0 errors, 1 warnings. (took 1s.398ms)
+

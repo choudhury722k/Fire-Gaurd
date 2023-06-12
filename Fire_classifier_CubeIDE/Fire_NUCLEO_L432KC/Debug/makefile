@@ -35,34 +35,34 @@ $(wildcard ../makefile.init) \
 $(wildcard ../makefile.targets) \
 
 
-BUILD_ARTIFACT_NAME := Fire_NUCLEO_L432KC
+BUILD_ARTIFACT_NAME := Fire_L432KC
 BUILD_ARTIFACT_EXTENSION := elf
 BUILD_ARTIFACT_PREFIX :=
 BUILD_ARTIFACT := $(BUILD_ARTIFACT_PREFIX)$(BUILD_ARTIFACT_NAME)$(if $(BUILD_ARTIFACT_EXTENSION),.$(BUILD_ARTIFACT_EXTENSION),)
 
 # Add inputs and outputs from these tool invocations to the build variables 
 EXECUTABLES += \
-Fire_NUCLEO_L432KC.elf \
+Fire_L432KC.elf \
 
 MAP_FILES += \
-Fire_NUCLEO_L432KC.map \
+Fire_L432KC.map \
 
 SIZE_OUTPUT += \
 default.size.stdout \
 
 OBJDUMP_LIST += \
-Fire_NUCLEO_L432KC.list \
+Fire_L432KC.list \
 
 
 # All Target
 all: main-build
 
 # Main-build Target
-main-build: Fire_NUCLEO_L432KC.elf secondary-outputs
+main-build: Fire_L432KC.elf secondary-outputs
 
 # Tool invocations
-Fire_NUCLEO_L432KC.elf Fire_NUCLEO_L432KC.map: $(OBJS) $(USER_OBJS) C:\Users\SOUMYA\Desktop\Fire-Gaurd\Fire_classifier_CubeIDE\Fire_NUCLEO_L432KC\STM32L432KCUX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "Fire_NUCLEO_L432KC.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\SOUMYA\Desktop\Fire-Gaurd\Fire_classifier_CubeIDE\Fire_NUCLEO_L432KC\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Fire_NUCLEO_L432KC.map" -Wl,--gc-sections -static -L../Middlewares/ST/AI/Lib -u_printf_float --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Fire_L432KC.elf Fire_L432KC.map: $(OBJS) $(USER_OBJS) C:\Users\SOUMYA\Desktop\Fire-Gaurd\Fire_classifier_CubeIDE\Fire_NUCLEO_L432KC\STM32L432KCUX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "Fire_L432KC.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\SOUMYA\Desktop\Fire-Gaurd\Fire_classifier_CubeIDE\Fire_NUCLEO_L432KC\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Fire_L432KC.map" -Wl,--gc-sections -static -L../Middlewares/ST/AI/Lib -u_printf_float --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -71,14 +71,14 @@ default.size.stdout: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	@echo 'Finished building: $@'
 	@echo ' '
 
-Fire_NUCLEO_L432KC.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "Fire_NUCLEO_L432KC.list"
+Fire_L432KC.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "Fire_L432KC.list"
 	@echo 'Finished building: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) Fire_NUCLEO_L432KC.elf Fire_NUCLEO_L432KC.list Fire_NUCLEO_L432KC.map default.size.stdout
+	-$(RM) Fire_L432KC.elf Fire_L432KC.list Fire_L432KC.map default.size.stdout
 	-@echo ' '
 
 secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST)

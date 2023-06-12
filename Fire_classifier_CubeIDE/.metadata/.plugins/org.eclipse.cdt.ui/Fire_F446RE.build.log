@@ -1,0 +1,10 @@
+16:15:40 **** Incremental Build of configuration Debug for project Fire_F446RE ****
+make -j12 all 
+arm-none-eabi-size   Fire_F446RE.elf 
+   text	   data	    bss	    dec	    hex	filename
+  33824	   2220	   2908	  38952	   9828	Fire_F446RE.elf
+Finished building: default.size.stdout
+ 
+
+16:15:41 Build Finished. 0 errors, 0 warnings. (took 925ms)
+

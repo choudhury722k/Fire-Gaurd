@@ -1,0 +1,17 @@
+02:09:06 **** Incremental Build of configuration Debug for project Fire_Nucleo_F446RE ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../X-CUBE-AI/App -I../Middlewares/ST/AI/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Fire_Nucleo_F446RE.elf" @"objects.list"  -l:NetworkRuntime520_CM4_GCC.a -mcpu=cortex-m4 -T"C:\Users\SOUMYA\Desktop\Fire-Gaurd\Fire_classifier_CubeIDE\Fire_Nucleo_F446RE\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Fire_Nucleo_F446RE.map" -Wl,--gc-sections -static -L../Middlewares/ST/AI/Lib --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Fire_Nucleo_F446RE.elf
+ 
+arm-none-eabi-size   Fire_Nucleo_F446RE.elf 
+arm-none-eabi-objdump -h -S  Fire_Nucleo_F446RE.elf  > "Fire_Nucleo_F446RE.list"
+   text	   data	    bss	    dec	    hex	filename
+    864	     12	   2596	   3472	    d90	Fire_Nucleo_F446RE.elf
+Finished building: default.size.stdout
+ 
+Finished building: Fire_Nucleo_F446RE.list
+ 
+
+02:09:07 Build Finished. 0 errors, 0 warnings. (took 1s.579ms)
+
