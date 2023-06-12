@@ -1,7 +1,2190 @@
-16:15:44 **** Incremental Build of configuration Debug for project Fire_L432KC ****
+02:10:45 **** Clean-only build of configuration Debug for project Fire_F446RE ****
+make -j12 clean 
+rm -rf ./X-CUBE-AI/App/fire.d ./X-CUBE-AI/App/fire.o ./X-CUBE-AI/App/fire.su ./X-CUBE-AI/App/fire_data.d ./X-CUBE-AI/App/fire_data.o ./X-CUBE-AI/App/fire_data.su
+rm -rf ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.su
+rm -rf ./Drivers/F446RE/src/apds9960.d ./Drivers/F446RE/src/apds9960.o ./Drivers/F446RE/src/apds9960.su ./Drivers/F446RE/src/ds1307.d ./Drivers/F446RE/src/ds1307.o ./Drivers/F446RE/src/ds1307.su ./Drivers/F446RE/src/gpio_driver.d ./Drivers/F446RE/src/gpio_driver.o ./Drivers/F446RE/src/gpio_driver.su ./Drivers/F446RE/src/i2c_driver.d ./Drivers/F446RE/src/i2c_driver.o ./Drivers/F446RE/src/i2c_driver.su ./Drivers/F446RE/src/lcd.d ./Drivers/F446RE/src/lcd.o ./Drivers/F446RE/src/lcd.su ./Drivers/F446RE/src/rcc_driver.d ./Drivers/F446RE/src/rcc_driver.o ./Drivers/F446RE/src/rcc_driver.su ./Drivers/F446RE/src/spi_driver.d ./Drivers/F446RE/src/spi_driver.o ./Drivers/F446RE/src/spi_driver.su ./Drivers/F446RE/src/uart_driver.d ./Drivers/F446RE/src/uart_driver.o ./Drivers/F446RE/src/uart_driver.su
+rm -rf ./Core/Startup/startup_stm32f446retx.d ./Core/Startup/startup_stm32f446retx.o
+rm -rf ./Core/Src/main.d ./Core/Src/main.o ./Core/Src/main.su ./Core/Src/stm32f4xx_hal_msp.d ./Core/Src/stm32f4xx_hal_msp.o ./Core/Src/stm32f4xx_hal_msp.su ./Core/Src/stm32f4xx_it.d ./Core/Src/stm32f4xx_it.o ./Core/Src/stm32f4xx_it.su ./Core/Src/syscalls.d ./Core/Src/syscalls.o ./Core/Src/syscalls.su ./Core/Src/sysmem.d ./Core/Src/sysmem.o ./Core/Src/sysmem.su ./Core/Src/system_stm32f4xx.d ./Core/Src/system_stm32f4xx.o ./Core/Src/system_stm32f4xx.su
+rm -rf Fire_F446RE.elf Fire_F446RE.list Fire_F446RE.map default.size.stdout
+ 
+02:10:47 **** Build of configuration Debug for project Fire_F446RE ****
 make -j12 all 
-arm-none-eabi-size   Fire_L432KC.elf 
+arm-none-eabi-gcc "../X-CUBE-AI/App/fire.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/src" -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../X-CUBE-AI/App -I../Middlewares/ST/AI/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"X-CUBE-AI/App/fire.d" -MT"X-CUBE-AI/App/fire.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "X-CUBE-AI/App/fire.o"
+arm-none-eabi-gcc "../X-CUBE-AI/App/fire_data.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/src" -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../X-CUBE-AI/App -I../Middlewares/ST/AI/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"X-CUBE-AI/App/fire_data.d" -MT"X-CUBE-AI/App/fire_data.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "X-CUBE-AI/App/fire_data.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/src" -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../X-CUBE-AI/App -I../Middlewares/ST/AI/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/src" -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../X-CUBE-AI/App -I../Middlewares/ST/AI/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/src" -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../X-CUBE-AI/App -I../Middlewares/ST/AI/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/src" -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../X-CUBE-AI/App -I../Middlewares/ST/AI/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/src" -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../X-CUBE-AI/App -I../Middlewares/ST/AI/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/src" -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../X-CUBE-AI/App -I../Middlewares/ST/AI/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/src" -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../X-CUBE-AI/App -I../Middlewares/ST/AI/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/src" -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../X-CUBE-AI/App -I../Middlewares/ST/AI/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/src" -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../X-CUBE-AI/App -I../Middlewares/ST/AI/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/src" -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../X-CUBE-AI/App -I../Middlewares/ST/AI/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/src" -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../X-CUBE-AI/App -I../Middlewares/ST/AI/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/src" -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../X-CUBE-AI/App -I../Middlewares/ST/AI/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/src" -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../X-CUBE-AI/App -I../Middlewares/ST/AI/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/src" -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../X-CUBE-AI/App -I../Middlewares/ST/AI/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/src" -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../X-CUBE-AI/App -I../Middlewares/ST/AI/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/src" -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../X-CUBE-AI/App -I../Middlewares/ST/AI/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/src" -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../X-CUBE-AI/App -I../Middlewares/ST/AI/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o"
+arm-none-eabi-gcc "../Drivers/F446RE/src/apds9960.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/src" -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../X-CUBE-AI/App -I../Middlewares/ST/AI/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/F446RE/src/apds9960.d" -MT"Drivers/F446RE/src/apds9960.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/F446RE/src/apds9960.o"
+arm-none-eabi-gcc "../Drivers/F446RE/src/ds1307.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/src" -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../X-CUBE-AI/App -I../Middlewares/ST/AI/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/F446RE/src/ds1307.d" -MT"Drivers/F446RE/src/ds1307.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/F446RE/src/ds1307.o"
+arm-none-eabi-gcc "../Drivers/F446RE/src/gpio_driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/src" -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../X-CUBE-AI/App -I../Middlewares/ST/AI/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/F446RE/src/gpio_driver.d" -MT"Drivers/F446RE/src/gpio_driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/F446RE/src/gpio_driver.o"
+arm-none-eabi-gcc "../Drivers/F446RE/src/i2c_driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/src" -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../X-CUBE-AI/App -I../Middlewares/ST/AI/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/F446RE/src/i2c_driver.d" -MT"Drivers/F446RE/src/i2c_driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/F446RE/src/i2c_driver.o"
+arm-none-eabi-gcc "../Drivers/F446RE/src/lcd.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/src" -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../X-CUBE-AI/App -I../Middlewares/ST/AI/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/F446RE/src/lcd.d" -MT"Drivers/F446RE/src/lcd.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/F446RE/src/lcd.o"
+arm-none-eabi-gcc "../Drivers/F446RE/src/rcc_driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/src" -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../X-CUBE-AI/App -I../Middlewares/ST/AI/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/F446RE/src/rcc_driver.d" -MT"Drivers/F446RE/src/rcc_driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/F446RE/src/rcc_driver.o"
+../Drivers/F446RE/src/apds9960.c: In function 'APDS9960_RGB_INIT':
+../Drivers/F446RE/src/apds9960.c:73:10: error: 'false' undeclared (first use in this function)
+   73 |   return false;
+      |          ^~~~~
+../Drivers/F446RE/src/apds9960.c:73:10: note: each undeclared identifier is reported only once for each function it appears in
+../Drivers/F446RE/src/apds9960.c:76:9: error: 'true' undeclared (first use in this function)
+   76 |  return true;
+      |         ^~~~
+../Drivers/F446RE/src/apds9960.c:78:1: warning: control reaches end of non-void function [-Wreturn-type]
+   78 | }
+      | ^
+make: *** [Drivers/F446RE/src/subdir.mk:40: Drivers/F446RE/src/apds9960.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+02:11:09 **** Incremental Build of configuration Debug for project Fire_F446RE ****
+make -j12 all 
+arm-none-eabi-gcc "../Drivers/F446RE/src/apds9960.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/src" -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../X-CUBE-AI/App -I../Middlewares/ST/AI/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/F446RE/src/apds9960.d" -MT"Drivers/F446RE/src/apds9960.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/F446RE/src/apds9960.o"
+arm-none-eabi-gcc "../Drivers/F446RE/src/spi_driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/src" -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../X-CUBE-AI/App -I../Middlewares/ST/AI/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/F446RE/src/spi_driver.d" -MT"Drivers/F446RE/src/spi_driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/F446RE/src/spi_driver.o"
+arm-none-eabi-gcc "../Drivers/F446RE/src/uart_driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/src" -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../X-CUBE-AI/App -I../Middlewares/ST/AI/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/F446RE/src/uart_driver.d" -MT"Drivers/F446RE/src/uart_driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/F446RE/src/uart_driver.o"
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Core/Startup/startup_stm32f446retx.d" -MT"Core/Startup/startup_stm32f446retx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Startup/startup_stm32f446retx.o" "../Core/Startup/startup_stm32f446retx.s"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/src" -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../X-CUBE-AI/App -I../Middlewares/ST/AI/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/src" -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../X-CUBE-AI/App -I../Middlewares/ST/AI/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/src" -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../X-CUBE-AI/App -I../Middlewares/ST/AI/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_it.o"
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/src" -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../X-CUBE-AI/App -I../Middlewares/ST/AI/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/src" -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../X-CUBE-AI/App -I../Middlewares/ST/AI/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sysmem.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32f4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/src" -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../X-CUBE-AI/App -I../Middlewares/ST/AI/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/system_stm32f4xx.d" -MT"Core/Src/system_stm32f4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/system_stm32f4xx.o"
+../Drivers/F446RE/src/spi_driver.c: In function 'SPI_SendDataIT':
+../Drivers/F446RE/src/spi_driver.c:152:13: warning: statement with no effect [-Wunused-value]
+  152 |   pSPIHandle->pTxBuffer;
+      |   ~~~~~~~~~~^~~~~~~~~~~
+../Drivers/F446RE/src/spi_driver.c:153:13: warning: statement with no effect [-Wunused-value]
+  153 |   pSPIHandle->TxLen;
+      |   ~~~~~~~~~~^~~~~~~
+../Drivers/F446RE/src/spi_driver.c:156:23: warning: statement with no effect [-Wunused-value]
+  156 |   pSPIHandle->TxState - SPI_BUSY_IN_TX;
+../Drivers/F446RE/src/spi_driver.c: In function 'SPI_RecieveDataIT':
+../Drivers/F446RE/src/spi_driver.c:167:13: warning: statement with no effect [-Wunused-value]
+  167 |   pSPIHandle->pRxBuffer;
+      |   ~~~~~~~~~~^~~~~~~~~~~
+../Drivers/F446RE/src/spi_driver.c:168:13: warning: statement with no effect [-Wunused-value]
+  168 |   pSPIHandle->RxLen;
+      |   ~~~~~~~~~~^~~~~~~
+../Drivers/F446RE/src/spi_driver.c:171:23: warning: statement with no effect [-Wunused-value]
+  171 |   pSPIHandle->RxState - SPI_BUSY_IN_RX;
+../Drivers/F446RE/src/uart_driver.c: In function 'USART_IRQHandling':
+../Drivers/F446RE/src/uart_driver.c:331:26: warning: variable 'temp3' set but not used [-Wunused-but-set-variable]
+  331 |  uint32_t temp1 , temp2, temp3;
+      |                          ^~~~~
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:50: warning: "PERIPH_BASE" redefined
+   50 | #define PERIPH_BASE             0x40000000U
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:920: note: this is the location of the previous definition
+  920 | #define PERIPH_BASE           0x40000000UL /*!< Peripheral base address in the alias region                                */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:52: warning: "APB2PERIPH_BASE" redefined
+   52 | #define APB2PERIPH_BASE         0x40010000U
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:938: note: this is the location of the previous definition
+  938 | #define APB2PERIPH_BASE       (PERIPH_BASE + 0x00010000UL)
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:53: warning: "AHB1PERIPH_BASE" redefined
+   53 | #define AHB1PERIPH_BASE         0x40020000U
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:939: note: this is the location of the previous definition
+  939 | #define AHB1PERIPH_BASE       (PERIPH_BASE + 0x00020000UL)
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:54: warning: "AHB2PERIPH_BASE" redefined
+   54 | #define AHB2PERIPH_BASE         0x50000000U
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:940: note: this is the location of the previous definition
+  940 | #define AHB2PERIPH_BASE       (PERIPH_BASE + 0x10000000UL)
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:215: warning: "GPIOA" redefined
+  215 | #define GPIOA                   ((GPIO_RegDef_t*)GPIOA_BASEADDR)
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:1121: note: this is the location of the previous definition
+ 1121 | #define GPIOA               ((GPIO_TypeDef *) GPIOA_BASE)
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:216: warning: "GPIOB" redefined
+  216 | #define GPIOB                   ((GPIO_RegDef_t*)GPIOB_BASEADDR)
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:1122: note: this is the location of the previous definition
+ 1122 | #define GPIOB               ((GPIO_TypeDef *) GPIOB_BASE)
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:217: warning: "GPIOC" redefined
+  217 | #define GPIOC                   ((GPIO_RegDef_t*)GPIOC_BASEADDR)
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:1123: note: this is the location of the previous definition
+ 1123 | #define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:218: warning: "GPIOD" redefined
+  218 | #define GPIOD                   ((GPIO_RegDef_t*)GPIOD_BASEADDR)
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:1124: note: this is the location of the previous definition
+ 1124 | #define GPIOD               ((GPIO_TypeDef *) GPIOD_BASE)
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:219: warning: "GPIOE" redefined
+  219 | #define GPIOE                   ((GPIO_RegDef_t*)GPIOE_BASEADDR)
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:1125: note: this is the location of the previous definition
+ 1125 | #define GPIOE               ((GPIO_TypeDef *) GPIOE_BASE)
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:220: warning: "GPIOF" redefined
+  220 | #define GPIOF                   ((GPIO_RegDef_t*)GPIOF_BASEADDR)
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:1126: note: this is the location of the previous definition
+ 1126 | #define GPIOF               ((GPIO_TypeDef *) GPIOF_BASE)
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:221: warning: "GPIOG" redefined
+  221 | #define GPIOG                   ((GPIO_RegDef_t*)GPIOG_BASEADDR)
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:1127: note: this is the location of the previous definition
+ 1127 | #define GPIOG               ((GPIO_TypeDef *) GPIOG_BASE)
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:222: warning: "GPIOH" redefined
+  222 | #define GPIOH                   ((GPIO_RegDef_t*)GPIOH_BASEADDR)
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:1128: note: this is the location of the previous definition
+ 1128 | #define GPIOH               ((GPIO_TypeDef *) GPIOH_BASE)
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:225: warning: "RCC" redefined
+  225 | #define RCC                     ((RCC_RegDef_t*)RCC_BASEADDR)
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:1130: note: this is the location of the previous definition
+ 1130 | #define RCC                 ((RCC_TypeDef *) RCC_BASE)
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:227: warning: "EXTI" redefined
+  227 | #define EXTI                    ((EXTI_RegDef_t*)EXT1_BASEADDR)
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:1111: note: this is the location of the previous definition
+ 1111 | #define EXTI                ((EXTI_TypeDef *) EXTI_BASE)
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:229: warning: "SYSCFG" redefined
+  229 | #define SYSCFG                  ((SYSCFG_RegDef_t*)SYSCFG_BASEADDR)
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:1110: note: this is the location of the previous definition
+ 1110 | #define SYSCFG              ((SYSCFG_TypeDef *) SYSCFG_BASE)
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:234: warning: "SPI1" redefined
+  234 | #define SPI1                    ((SPI_RegDef_t*)SPI1_BASEADDR)
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:1108: note: this is the location of the previous definition
+ 1108 | #define SPI1                ((SPI_TypeDef *) SPI1_BASE)
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:235: warning: "SPI2" redefined
+  235 | #define SPI2                    ((SPI_RegDef_t*)SPI2_BASEADDR)
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:1080: note: this is the location of the previous definition
+ 1080 | #define SPI2                ((SPI_TypeDef *) SPI2_BASE)
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:236: warning: "SPI3" redefined
+  236 | #define SPI3                    ((SPI_RegDef_t*)SPI3_BASEADDR)
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:1081: note: this is the location of the previous definition
+ 1081 | #define SPI3                ((SPI_TypeDef *) SPI3_BASE)
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:238: warning: "I2C1" redefined
+  238 | #define I2C1      ((I2C_RegDef_t*)I2C1_BASEADDR)
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:1087: note: this is the location of the previous definition
+ 1087 | #define I2C1                ((I2C_TypeDef *) I2C1_BASE)
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:239: warning: "I2C2" redefined
+  239 | #define I2C2      ((I2C_RegDef_t*)I2C2_BASEADDR)
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:1088: note: this is the location of the previous definition
+ 1088 | #define I2C2                ((I2C_TypeDef *) I2C2_BASE)
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:240: warning: "I2C3" redefined
+  240 | #define I2C3      ((I2C_RegDef_t*)I2C3_BASEADDR)
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:1089: note: this is the location of the previous definition
+ 1089 | #define I2C3                ((I2C_TypeDef *) I2C3_BASE)
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:242: warning: "USART1" redefined
+  242 | #define USART1     ((USART_RegDef_t*)USART1_BASEADDR)
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:1099: note: this is the location of the previous definition
+ 1099 | #define USART1              ((USART_TypeDef *) USART1_BASE)
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:243: warning: "USART2" redefined
+  243 | #define USART2     ((USART_RegDef_t*)USART2_BASEADDR)
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:1083: note: this is the location of the previous definition
+ 1083 | #define USART2              ((USART_TypeDef *) USART2_BASE)
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:244: warning: "USART3" redefined
+  244 | #define USART3     ((USART_RegDef_t*)USART3_BASEADDR)
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:1084: note: this is the location of the previous definition
+ 1084 | #define USART3              ((USART_TypeDef *) USART3_BASE)
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:245: warning: "UART4" redefined
+  245 | #define UART4      ((USART_RegDef_t*)UART4_BASEADDR)
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:1085: note: this is the location of the previous definition
+ 1085 | #define UART4               ((USART_TypeDef *) UART4_BASE)
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:246: warning: "UART5" redefined
+  246 | #define UART5      ((USART_RegDef_t*)UART5_BASEADDR)
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:1086: note: this is the location of the previous definition
+ 1086 | #define UART5               ((USART_TypeDef *) UART5_BASE)
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:247: warning: "USART6" redefined
+  247 | #define USART6     ((USART_RegDef_t*)USART6_BASEADDR)
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:1100: note: this is the location of the previous definition
+ 1100 | #define USART6              ((USART_TypeDef *) USART6_BASE)
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:375: warning: "SPI_CR1_CPHA" redefined
+  375 | #define SPI_CR1_CPHA            0
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:12625: note: this is the location of the previous definition
+12625 | #define SPI_CR1_CPHA                SPI_CR1_CPHA_Msk                           /*!<Clock Phase      */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:376: warning: "SPI_CR1_CPOL" redefined
+  376 | #define SPI_CR1_CPOL            1
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:12628: note: this is the location of the previous definition
+12628 | #define SPI_CR1_CPOL                SPI_CR1_CPOL_Msk                           /*!<Clock Polarity   */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:377: warning: "SPI_CR1_MSTR" redefined
+  377 | #define SPI_CR1_MSTR            2
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:12631: note: this is the location of the previous definition
+12631 | #define SPI_CR1_MSTR                SPI_CR1_MSTR_Msk                           /*!<Master Selection */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:378: warning: "SPI_CR1_BR" redefined
+  378 | #define SPI_CR1_BR              3
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:12635: note: this is the location of the previous definition
+12635 | #define SPI_CR1_BR                  SPI_CR1_BR_Msk                             /*!<BR[2:0] bits (Baud Rate Control) */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:379: warning: "SPI_CR1_SPE" redefined
+  379 | #define SPI_CR1_SPE             6
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:12642: note: this is the location of the previous definition
+12642 | #define SPI_CR1_SPE                 SPI_CR1_SPE_Msk                            /*!<SPI Enable                          */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:380: warning: "SPI_CR1_LSBFIRST" redefined
+  380 | #define SPI_CR1_LSBFIRST        7
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:12645: note: this is the location of the previous definition
+12645 | #define SPI_CR1_LSBFIRST            SPI_CR1_LSBFIRST_Msk                       /*!<Frame Format                        */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:381: warning: "SPI_CR1_SSI" redefined
+  381 | #define SPI_CR1_SSI             8
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:12648: note: this is the location of the previous definition
+12648 | #define SPI_CR1_SSI                 SPI_CR1_SSI_Msk                            /*!<Internal slave select               */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:382: warning: "SPI_CR1_SSM" redefined
+  382 | #define SPI_CR1_SSM             9
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:12651: note: this is the location of the previous definition
+12651 | #define SPI_CR1_SSM                 SPI_CR1_SSM_Msk                            /*!<Software slave management           */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:383: warning: "SPI_CR1_RXONLY" redefined
+  383 | #define SPI_CR1_RXONLY          10
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:12654: note: this is the location of the previous definition
+12654 | #define SPI_CR1_RXONLY              SPI_CR1_RXONLY_Msk                         /*!<Receive only                        */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:384: warning: "SPI_CR1_DFF" redefined
+  384 | #define SPI_CR1_DFF             11
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:12657: note: this is the location of the previous definition
+12657 | #define SPI_CR1_DFF                 SPI_CR1_DFF_Msk                            /*!<Data Frame Format                   */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:385: warning: "SPI_CR1_CRCNEXT" redefined
+  385 | #define SPI_CR1_CRCNEXT         12
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:12660: note: this is the location of the previous definition
+12660 | #define SPI_CR1_CRCNEXT             SPI_CR1_CRCNEXT_Msk                        /*!<Transmit CRC next                   */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:386: warning: "SPI_CR1_CRCEN" redefined
+  386 | #define SPI_CR1_CRCEN           13
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:12663: note: this is the location of the previous definition
+12663 | #define SPI_CR1_CRCEN               SPI_CR1_CRCEN_Msk                          /*!<Hardware CRC calculation enable     */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:387: warning: "SPI_CR1_BIDIOE" redefined
+  387 | #define SPI_CR1_BIDIOE          14
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:12666: note: this is the location of the previous definition
+12666 | #define SPI_CR1_BIDIOE              SPI_CR1_BIDIOE_Msk                         /*!<Output enable in bidirectional mode */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:388: warning: "SPI_CR1_BIDIMODE" redefined
+  388 | #define SPI_CR1_BIDIMODE        15
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:12669: note: this is the location of the previous definition
+12669 | #define SPI_CR1_BIDIMODE            SPI_CR1_BIDIMODE_Msk                       /*!<Bidirectional data mode enable      */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:390: warning: "SPI_CR2_RXDMAEN" redefined
+  390 | #define SPI_CR2_RXDMAEN         0
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:12674: note: this is the location of the previous definition
+12674 | #define SPI_CR2_RXDMAEN             SPI_CR2_RXDMAEN_Msk                        /*!<Rx Buffer DMA Enable                 */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:391: warning: "SPI_CR2_TXDMAEN" redefined
+  391 | #define SPI_CR2_TXDMAEN         1
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:12677: note: this is the location of the previous definition
+12677 | #define SPI_CR2_TXDMAEN             SPI_CR2_TXDMAEN_Msk                        /*!<Tx Buffer DMA Enable                 */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:392: warning: "SPI_CR2_SSOE" redefined
+  392 | #define SPI_CR2_SSOE            2
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:12680: note: this is the location of the previous definition
+12680 | #define SPI_CR2_SSOE                SPI_CR2_SSOE_Msk                           /*!<SS Output Enable                     */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:393: warning: "SPI_CR2_FRF" redefined
+  393 | #define SPI_CR2_FRF             4
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:12683: note: this is the location of the previous definition
+12683 | #define SPI_CR2_FRF                 SPI_CR2_FRF_Msk                            /*!<Frame Format                         */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:394: warning: "SPI_CR2_ERRIE" redefined
+  394 | #define SPI_CR2_ERRIE           5
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:12686: note: this is the location of the previous definition
+12686 | #define SPI_CR2_ERRIE               SPI_CR2_ERRIE_Msk                          /*!<Error Interrupt Enable               */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:395: warning: "SPI_CR2_RXNEIE" redefined
+  395 | #define SPI_CR2_RXNEIE          6
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:12689: note: this is the location of the previous definition
+12689 | #define SPI_CR2_RXNEIE              SPI_CR2_RXNEIE_Msk                         /*!<RX buffer Not Empty Interrupt Enable */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:396: warning: "SPI_CR2_TXEIE" redefined
+  396 | #define SPI_CR2_TXEIE           7
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:12692: note: this is the location of the previous definition
+12692 | #define SPI_CR2_TXEIE               SPI_CR2_TXEIE_Msk                          /*!<Tx buffer Empty Interrupt Enable     */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:401: warning: "SPI_SR_RXNE" redefined
+  401 | #define SPI_SR_RXNE             0
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:12697: note: this is the location of the previous definition
+12697 | #define SPI_SR_RXNE                 SPI_SR_RXNE_Msk                            /*!<Receive buffer Not Empty */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:402: warning: "SPI_SR_TXE" redefined
+  402 | #define SPI_SR_TXE              1
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:12700: note: this is the location of the previous definition
+12700 | #define SPI_SR_TXE                  SPI_SR_TXE_Msk                             /*!<Transmit buffer Empty    */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:403: warning: "SPI_SR_CHSIDE" redefined
+  403 | #define SPI_SR_CHSIDE           2
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:12703: note: this is the location of the previous definition
+12703 | #define SPI_SR_CHSIDE               SPI_SR_CHSIDE_Msk                          /*!<Channel side             */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:404: warning: "SPI_SR_UDR" redefined
+  404 | #define SPI_SR_UDR              3
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:12706: note: this is the location of the previous definition
+12706 | #define SPI_SR_UDR                  SPI_SR_UDR_Msk                             /*!<Underrun flag            */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:405: warning: "SPI_SR_CRCERR" redefined
+  405 | #define SPI_SR_CRCERR           4
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:12709: note: this is the location of the previous definition
+12709 | #define SPI_SR_CRCERR               SPI_SR_CRCERR_Msk                          /*!<CRC Error flag           */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:406: warning: "SPI_SR_MODF" redefined
+  406 | #define SPI_SR_MODF             5
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:12712: note: this is the location of the previous definition
+12712 | #define SPI_SR_MODF                 SPI_SR_MODF_Msk                            /*!<Mode fault               */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:407: warning: "SPI_SR_OVR" redefined
+  407 | #define SPI_SR_OVR              6
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:12715: note: this is the location of the previous definition
+12715 | #define SPI_SR_OVR                  SPI_SR_OVR_Msk                             /*!<Overrun flag             */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:408: warning: "SPI_SR_BSY" redefined
+  408 | #define SPI_SR_BSY              7
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:12718: note: this is the location of the previous definition
+12718 | #define SPI_SR_BSY                  SPI_SR_BSY_Msk                             /*!<Busy flag                */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:409: warning: "SPI_SR_FRE" redefined
+  409 | #define SPI_SR_FRE              8
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:12721: note: this is the location of the previous definition
+12721 | #define SPI_SR_FRE                  SPI_SR_FRE_Msk                             /*!<Frame format error flag  */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:417: warning: "I2C_CR1_PE" redefined
+  417 | #define I2C_CR1_PE      0
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:9163: note: this is the location of the previous definition
+ 9163 | #define I2C_CR1_PE                I2C_CR1_PE_Msk                               /*!<Peripheral Enable                             */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:418: warning: "I2C_CR1_NOSTRETCH" redefined
+  418 | #define I2C_CR1_NOSTRETCH      7
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:9181: note: this is the location of the previous definition
+ 9181 | #define I2C_CR1_NOSTRETCH         I2C_CR1_NOSTRETCH_Msk                        /*!<Clock Stretching Disable (Slave mode)         */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:419: warning: "I2C_CR1_START" redefined
+  419 | #define I2C_CR1_START      8
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:9184: note: this is the location of the previous definition
+ 9184 | #define I2C_CR1_START             I2C_CR1_START_Msk                            /*!<Start Generation                              */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:420: warning: "I2C_CR1_STOP" redefined
+  420 | #define I2C_CR1_STOP        9
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:9187: note: this is the location of the previous definition
+ 9187 | #define I2C_CR1_STOP              I2C_CR1_STOP_Msk                             /*!<Stop Generation                               */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:421: warning: "I2C_CR1_ACK" redefined
+  421 | #define I2C_CR1_ACK       10
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:9190: note: this is the location of the previous definition
+ 9190 | #define I2C_CR1_ACK               I2C_CR1_ACK_Msk                              /*!<Acknowledge Enable                            */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:422: warning: "I2C_CR1_SWRST" redefined
+  422 | #define I2C_CR1_SWRST        15
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:9202: note: this is the location of the previous definition
+ 9202 | #define I2C_CR1_SWRST             I2C_CR1_SWRST_Msk                            /*!<Software Reset                                */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:427: warning: "I2C_CR2_FREQ" redefined
+  427 | #define I2C_CR2_FREQ      0
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:9207: note: this is the location of the previous definition
+ 9207 | #define I2C_CR2_FREQ              I2C_CR2_FREQ_Msk                             /*!<FREQ[5:0] bits (Peripheral Clock Frequency)   */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:428: warning: "I2C_CR2_ITERREN" redefined
+  428 | #define I2C_CR2_ITERREN      8
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:9217: note: this is the location of the previous definition
+ 9217 | #define I2C_CR2_ITERREN           I2C_CR2_ITERREN_Msk                          /*!<Error Interrupt Enable  */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:429: warning: "I2C_CR2_ITEVTEN" redefined
+  429 | #define I2C_CR2_ITEVTEN      9
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:9220: note: this is the location of the previous definition
+ 9220 | #define I2C_CR2_ITEVTEN           I2C_CR2_ITEVTEN_Msk                          /*!<Event Interrupt Enable  */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:430: warning: "I2C_CR2_ITBUFEN" redefined
+  430 | #define I2C_CR2_ITBUFEN        10
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:9223: note: this is the location of the previous definition
+ 9223 | #define I2C_CR2_ITBUFEN           I2C_CR2_ITBUFEN_Msk                          /*!<Buffer Interrupt Enable */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:435: warning: "I2C_OAR1_ADD0" redefined
+  435 | #define I2C_OAR1_ADD0         0
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:9237: note: this is the location of the previous definition
+ 9237 | #define I2C_OAR1_ADD0             I2C_OAR1_ADD0_Msk                            /*!<Bit 0 */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:438: warning: "I2C_OAR1_ADDMODE" redefined
+  438 | #define I2C_OAR1_ADDMODE        15
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:9268: note: this is the location of the previous definition
+ 9268 | #define I2C_OAR1_ADDMODE          I2C_OAR1_ADDMODE_Msk                         /*!<Addressing Mode (Slave mode) */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:444: warning: "I2C_SR1_SB" redefined
+  444 | #define I2C_SR1_SB        0
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:9286: note: this is the location of the previous definition
+ 9286 | #define I2C_SR1_SB                I2C_SR1_SB_Msk                               /*!<Start Bit (Master mode)                         */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:445: warning: "I2C_SR1_ADDR" redefined
+  445 | #define I2C_SR1_ADDR       1
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:9289: note: this is the location of the previous definition
+ 9289 | #define I2C_SR1_ADDR              I2C_SR1_ADDR_Msk                             /*!<Address sent (master mode)/matched (slave mode) */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:446: warning: "I2C_SR1_BTF" redefined
+  446 | #define I2C_SR1_BTF      2
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:9292: note: this is the location of the previous definition
+ 9292 | #define I2C_SR1_BTF               I2C_SR1_BTF_Msk                              /*!<Byte Transfer Finished                          */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:447: warning: "I2C_SR1_ADD10" redefined
+  447 | #define I2C_SR1_ADD10      3
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:9295: note: this is the location of the previous definition
+ 9295 | #define I2C_SR1_ADD10             I2C_SR1_ADD10_Msk                            /*!<10-bit header sent (Master mode)                */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:448: warning: "I2C_SR1_STOPF" redefined
+  448 | #define I2C_SR1_STOPF      4
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:9298: note: this is the location of the previous definition
+ 9298 | #define I2C_SR1_STOPF             I2C_SR1_STOPF_Msk                            /*!<Stop detection (Slave mode)                     */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:449: warning: "I2C_SR1_RXNE" redefined
+  449 | #define I2C_SR1_RXNE      6
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:9301: note: this is the location of the previous definition
+ 9301 | #define I2C_SR1_RXNE              I2C_SR1_RXNE_Msk                             /*!<Data Register not Empty (receivers)             */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:450: warning: "I2C_SR1_TXE" redefined
+  450 | #define I2C_SR1_TXE      7
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:9304: note: this is the location of the previous definition
+ 9304 | #define I2C_SR1_TXE               I2C_SR1_TXE_Msk                              /*!<Data Register Empty (transmitters)              */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:451: warning: "I2C_SR1_BERR" redefined
+  451 | #define I2C_SR1_BERR      8
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:9307: note: this is the location of the previous definition
+ 9307 | #define I2C_SR1_BERR              I2C_SR1_BERR_Msk                             /*!<Bus Error                                       */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:452: warning: "I2C_SR1_ARLO" redefined
+  452 | #define I2C_SR1_ARLO      9
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:9310: note: this is the location of the previous definition
+ 9310 | #define I2C_SR1_ARLO              I2C_SR1_ARLO_Msk                             /*!<Arbitration Lost (master mode)                  */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:453: warning: "I2C_SR1_AF" redefined
+  453 | #define I2C_SR1_AF        10
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:9313: note: this is the location of the previous definition
+ 9313 | #define I2C_SR1_AF                I2C_SR1_AF_Msk                               /*!<Acknowledge Failure                             */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:454: warning: "I2C_SR1_OVR" redefined
+  454 | #define I2C_SR1_OVR      11
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:9316: note: this is the location of the previous definition
+ 9316 | #define I2C_SR1_OVR               I2C_SR1_OVR_Msk                              /*!<Overrun/Underrun                                */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:455: warning: "I2C_SR1_TIMEOUT" redefined
+  455 | #define I2C_SR1_TIMEOUT     14
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:9322: note: this is the location of the previous definition
+ 9322 | #define I2C_SR1_TIMEOUT           I2C_SR1_TIMEOUT_Msk                          /*!<Timeout or Tlow Error                           */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:460: warning: "I2C_SR2_MSL" redefined
+  460 | #define I2C_SR2_MSL      0
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:9330: note: this is the location of the previous definition
+ 9330 | #define I2C_SR2_MSL               I2C_SR2_MSL_Msk                              /*!<Master/Slave                                    */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:461: warning: "I2C_SR2_BUSY" redefined
+  461 | #define I2C_SR2_BUSY      1
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:9333: note: this is the location of the previous definition
+ 9333 | #define I2C_SR2_BUSY              I2C_SR2_BUSY_Msk                             /*!<Bus Busy                                        */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:462: warning: "I2C_SR2_TRA" redefined
+  462 | #define I2C_SR2_TRA      2
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:9336: note: this is the location of the previous definition
+ 9336 | #define I2C_SR2_TRA               I2C_SR2_TRA_Msk                              /*!<Transmitter/Receiver                            */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:463: warning: "I2C_SR2_GENCALL" redefined
+  463 | #define I2C_SR2_GENCALL     4
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:9339: note: this is the location of the previous definition
+ 9339 | #define I2C_SR2_GENCALL           I2C_SR2_GENCALL_Msk                          /*!<General Call Address (Slave mode)               */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:464: warning: "I2C_SR2_DUALF" redefined
+  464 | #define I2C_SR2_DUALF      7
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:9348: note: this is the location of the previous definition
+ 9348 | #define I2C_SR2_DUALF             I2C_SR2_DUALF_Msk                            /*!<Dual Flag (Slave mode)                          */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:469: warning: "I2C_CCR_CCR" redefined
+  469 | #define I2C_CCR_CCR       0
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:9356: note: this is the location of the previous definition
+ 9356 | #define I2C_CCR_CCR               I2C_CCR_CCR_Msk                              /*!<Clock Control Register in Fast/Standard mode (Master mode) */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:470: warning: "I2C_CCR_DUTY" redefined
+  470 | #define I2C_CCR_DUTY      14
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:9359: note: this is the location of the previous definition
+ 9359 | #define I2C_CCR_DUTY              I2C_CCR_DUTY_Msk                             /*!<Fast Mode Duty Cycle                                       */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:471: warning: "I2C_CCR_FS" redefined
+  471 | #define I2C_CCR_FS        15
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:9362: note: this is the location of the previous definition
+ 9362 | #define I2C_CCR_FS                I2C_CCR_FS_Msk                               /*!<I2C Master Mode Selection                                  */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:480: warning: "USART_CR1_SBK" redefined
+  480 | #define USART_CR1_SBK     0
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:13745: note: this is the location of the previous definition
+13745 | #define USART_CR1_SBK                 USART_CR1_SBK_Msk                        /*!<Send Break                             */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:481: warning: "USART_CR1_RWU" redefined
+  481 | #define USART_CR1_RWU      1
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:13748: note: this is the location of the previous definition
+13748 | #define USART_CR1_RWU                 USART_CR1_RWU_Msk                        /*!<Receiver wakeup                        */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:482: warning: "USART_CR1_RE" redefined
+  482 | #define USART_CR1_RE       2
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:13751: note: this is the location of the previous definition
+13751 | #define USART_CR1_RE                  USART_CR1_RE_Msk                         /*!<Receiver Enable                        */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:483: warning: "USART_CR1_TE" redefined
+  483 | #define USART_CR1_TE      3
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:13754: note: this is the location of the previous definition
+13754 | #define USART_CR1_TE                  USART_CR1_TE_Msk                         /*!<Transmitter Enable                     */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:484: warning: "USART_CR1_IDLEIE" redefined
+  484 | #define USART_CR1_IDLEIE     4
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:13757: note: this is the location of the previous definition
+13757 | #define USART_CR1_IDLEIE              USART_CR1_IDLEIE_Msk                     /*!<IDLE Interrupt Enable                  */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:485: warning: "USART_CR1_RXNEIE" redefined
+  485 | #define USART_CR1_RXNEIE      5
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:13760: note: this is the location of the previous definition
+13760 | #define USART_CR1_RXNEIE              USART_CR1_RXNEIE_Msk                     /*!<RXNE Interrupt Enable                  */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:486: warning: "USART_CR1_TCIE" redefined
+  486 | #define USART_CR1_TCIE     6
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:13763: note: this is the location of the previous definition
+13763 | #define USART_CR1_TCIE                USART_CR1_TCIE_Msk                       /*!<Transmission Complete Interrupt Enable */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:487: warning: "USART_CR1_TXEIE" redefined
+  487 | #define USART_CR1_TXEIE     7
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:13766: note: this is the location of the previous definition
+13766 | #define USART_CR1_TXEIE               USART_CR1_TXEIE_Msk                      /*!<TXE Interrupt Enable                   */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:488: warning: "USART_CR1_PEIE" redefined
+  488 | #define USART_CR1_PEIE      8
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:13769: note: this is the location of the previous definition
+13769 | #define USART_CR1_PEIE                USART_CR1_PEIE_Msk                       /*!<PE Interrupt Enable                    */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:489: warning: "USART_CR1_PS" redefined
+  489 | #define USART_CR1_PS      9
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:13772: note: this is the location of the previous definition
+13772 | #define USART_CR1_PS                  USART_CR1_PS_Msk                         /*!<Parity Selection                       */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:490: warning: "USART_CR1_PCE" redefined
+  490 | #define USART_CR1_PCE      10
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:13775: note: this is the location of the previous definition
+13775 | #define USART_CR1_PCE                 USART_CR1_PCE_Msk                        /*!<Parity Control Enable                  */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:491: warning: "USART_CR1_WAKE" redefined
+  491 | #define USART_CR1_WAKE      11
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:13778: note: this is the location of the previous definition
+13778 | #define USART_CR1_WAKE                USART_CR1_WAKE_Msk                       /*!<Wakeup method                          */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:492: warning: "USART_CR1_M" redefined
+  492 | #define USART_CR1_M      12
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:13781: note: this is the location of the previous definition
+13781 | #define USART_CR1_M                   USART_CR1_M_Msk                          /*!<Word length                            */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:493: warning: "USART_CR1_UE" redefined
+  493 | #define USART_CR1_UE      13
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:13784: note: this is the location of the previous definition
+13784 | #define USART_CR1_UE                  USART_CR1_UE_Msk                         /*!<USART Enable                           */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:494: warning: "USART_CR1_OVER8" redefined
+  494 | #define USART_CR1_OVER8      15
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:13787: note: this is the location of the previous definition
+13787 | #define USART_CR1_OVER8               USART_CR1_OVER8_Msk                      /*!<USART Oversampling by 8 enable         */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:501: warning: "USART_CR2_ADD" redefined
+  501 | #define USART_CR2_ADD       0
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:13792: note: this is the location of the previous definition
+13792 | #define USART_CR2_ADD                 USART_CR2_ADD_Msk                        /*!<Address of the USART node            */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:502: warning: "USART_CR2_LBDL" redefined
+  502 | #define USART_CR2_LBDL       5
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:13795: note: this is the location of the previous definition
+13795 | #define USART_CR2_LBDL                USART_CR2_LBDL_Msk                       /*!<LIN Break Detection Length           */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:503: warning: "USART_CR2_LBDIE" redefined
+  503 | #define USART_CR2_LBDIE      6
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:13798: note: this is the location of the previous definition
+13798 | #define USART_CR2_LBDIE               USART_CR2_LBDIE_Msk                      /*!<LIN Break Detection Interrupt Enable */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:504: warning: "USART_CR2_LBCL" redefined
+  504 | #define USART_CR2_LBCL       8
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:13801: note: this is the location of the previous definition
+13801 | #define USART_CR2_LBCL                USART_CR2_LBCL_Msk                       /*!<Last Bit Clock pulse                 */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:505: warning: "USART_CR2_CPHA" redefined
+  505 | #define USART_CR2_CPHA       9
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:13804: note: this is the location of the previous definition
+13804 | #define USART_CR2_CPHA                USART_CR2_CPHA_Msk                       /*!<Clock Phase                          */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:506: warning: "USART_CR2_CPOL" redefined
+  506 | #define USART_CR2_CPOL       10
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:13807: note: this is the location of the previous definition
+13807 | #define USART_CR2_CPOL                USART_CR2_CPOL_Msk                       /*!<Clock Polarity                       */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:507: warning: "USART_CR2_STOP" redefined
+  507 | #define USART_CR2_STOP       12
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:13814: note: this is the location of the previous definition
+13814 | #define USART_CR2_STOP                USART_CR2_STOP_Msk                       /*!<STOP[1:0] bits (STOP bits) */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:508: warning: "USART_CR2_LINEN" redefined
+  508 | #define USART_CR2_LINEN       14
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:13820: note: this is the location of the previous definition
+13820 | #define USART_CR2_LINEN               USART_CR2_LINEN_Msk                      /*!<LIN mode enable */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:514: warning: "USART_CR3_EIE" redefined
+  514 | #define USART_CR3_EIE       0
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:13825: note: this is the location of the previous definition
+13825 | #define USART_CR3_EIE                 USART_CR3_EIE_Msk                        /*!<Error Interrupt Enable      */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:515: warning: "USART_CR3_IREN" redefined
+  515 | #define USART_CR3_IREN       1
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:13828: note: this is the location of the previous definition
+13828 | #define USART_CR3_IREN                USART_CR3_IREN_Msk                       /*!<IrDA mode Enable            */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:516: warning: "USART_CR3_IRLP" redefined
+  516 | #define USART_CR3_IRLP      2
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:13831: note: this is the location of the previous definition
+13831 | #define USART_CR3_IRLP                USART_CR3_IRLP_Msk                       /*!<IrDA Low-Power              */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:517: warning: "USART_CR3_HDSEL" redefined
+  517 | #define USART_CR3_HDSEL       3
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:13834: note: this is the location of the previous definition
+13834 | #define USART_CR3_HDSEL               USART_CR3_HDSEL_Msk                      /*!<Half-Duplex Selection       */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:518: warning: "USART_CR3_NACK" redefined
+  518 | #define USART_CR3_NACK       4
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:13837: note: this is the location of the previous definition
+13837 | #define USART_CR3_NACK                USART_CR3_NACK_Msk                       /*!<Smartcard NACK enable       */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:519: warning: "USART_CR3_SCEN" redefined
+  519 | #define USART_CR3_SCEN       5
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:13840: note: this is the location of the previous definition
+13840 | #define USART_CR3_SCEN                USART_CR3_SCEN_Msk                       /*!<Smartcard mode enable       */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:520: warning: "USART_CR3_DMAR" redefined
+  520 | #define USART_CR3_DMAR      6
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:13843: note: this is the location of the previous definition
+13843 | #define USART_CR3_DMAR                USART_CR3_DMAR_Msk                       /*!<DMA Enable Receiver         */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:521: warning: "USART_CR3_DMAT" redefined
+  521 | #define USART_CR3_DMAT       7
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:13846: note: this is the location of the previous definition
+13846 | #define USART_CR3_DMAT                USART_CR3_DMAT_Msk                       /*!<DMA Enable Transmitter      */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:522: warning: "USART_CR3_RTSE" redefined
+  522 | #define USART_CR3_RTSE       8
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:13849: note: this is the location of the previous definition
+13849 | #define USART_CR3_RTSE                USART_CR3_RTSE_Msk                       /*!<RTS Enable                  */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:523: warning: "USART_CR3_CTSE" redefined
+  523 | #define USART_CR3_CTSE       9
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:13852: note: this is the location of the previous definition
+13852 | #define USART_CR3_CTSE                USART_CR3_CTSE_Msk                       /*!<CTS Enable                  */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:524: warning: "USART_CR3_CTSIE" redefined
+  524 | #define USART_CR3_CTSIE       10
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:13855: note: this is the location of the previous definition
+13855 | #define USART_CR3_CTSIE               USART_CR3_CTSIE_Msk                      /*!<CTS Interrupt Enable        */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:525: warning: "USART_CR3_ONEBIT" redefined
+  525 | #define USART_CR3_ONEBIT       11
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:13858: note: this is the location of the previous definition
+13858 | #define USART_CR3_ONEBIT              USART_CR3_ONEBIT_Msk                     /*!<USART One bit method enable */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:531: warning: "USART_SR_PE" redefined
+  531 | #define USART_SR_PE            0
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:13700: note: this is the location of the previous definition
+13700 | #define USART_SR_PE                   USART_SR_PE_Msk                          /*!<Parity Error                 */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:532: warning: "USART_SR_FE" redefined
+  532 | #define USART_SR_FE            1
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:13703: note: this is the location of the previous definition
+13703 | #define USART_SR_FE                   USART_SR_FE_Msk                          /*!<Framing Error                */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:533: warning: "USART_SR_NE" redefined
+  533 | #define USART_SR_NE            2
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:13706: note: this is the location of the previous definition
+13706 | #define USART_SR_NE                   USART_SR_NE_Msk                          /*!<Noise Error Flag             */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:534: warning: "USART_SR_ORE" redefined
+  534 | #define USART_SR_ORE           3
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:13709: note: this is the location of the previous definition
+13709 | #define USART_SR_ORE                  USART_SR_ORE_Msk                         /*!<OverRun Error                */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:535: warning: "USART_SR_IDLE" redefined
+  535 | #define USART_SR_IDLE          4
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:13712: note: this is the location of the previous definition
+13712 | #define USART_SR_IDLE                 USART_SR_IDLE_Msk                        /*!<IDLE line detected           */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:536: warning: "USART_SR_RXNE" redefined
+  536 | #define USART_SR_RXNE           5
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:13715: note: this is the location of the previous definition
+13715 | #define USART_SR_RXNE                 USART_SR_RXNE_Msk                        /*!<Read Data Register Not Empty */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:537: warning: "USART_SR_TC" redefined
+  537 | #define USART_SR_TC            6
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:13718: note: this is the location of the previous definition
+13718 | #define USART_SR_TC                   USART_SR_TC_Msk                          /*!<Transmission Complete        */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:538: warning: "USART_SR_TXE" redefined
+  538 | #define USART_SR_TXE           7
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:13721: note: this is the location of the previous definition
+13721 | #define USART_SR_TXE                  USART_SR_TXE_Msk                         /*!<Transmit Data Register Empty */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:539: warning: "USART_SR_LBD" redefined
+  539 | #define USART_SR_LBD           8
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:13724: note: this is the location of the previous definition
+13724 | #define USART_SR_LBD                  USART_SR_LBD_Msk                         /*!<LIN Break Detection Flag     */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:540: warning: "USART_SR_CTS" redefined
+  540 | #define USART_SR_CTS           9
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:13727: note: this is the location of the previous definition
+13727 | #define USART_SR_CTS                  USART_SR_CTS_Msk                         /*!<CTS Flag                     */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:543,
+                 from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/gpio_driver.h:60: warning: "GPIO_MODE_ANALOG" redefined
+   60 | #define GPIO_MODE_ANALOG    3
+      | 
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:279,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h:123: note: this is the location of the previous definition
+  123 | #define  GPIO_MODE_ANALOG                       MODE_ANALOG                                                 /*!< Analog Mode  */
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:543,
+                 from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/gpio_driver.h:74: warning: "GPIO_SPEED_LOW" redefined
+   74 | #define GPIO_SPEED_LOW      0
+      | 
+In file included from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:30,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:652: note: this is the location of the previous definition
+  652 | #define  GPIO_SPEED_LOW                           GPIO_SPEED_FREQ_LOW
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:543,
+                 from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/gpio_driver.h:75: warning: "GPIO_SPEED_MEDIUM" redefined
+   75 | #define GPIO_SPEED_MEDIUM   1
+      | 
+In file included from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:30,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:653: note: this is the location of the previous definition
+  653 | #define  GPIO_SPEED_MEDIUM                        GPIO_SPEED_FREQ_MEDIUM
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:543,
+                 from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/gpio_driver.h:76: warning: "GPIO_SPEED_FAST" redefined
+   76 | #define GPIO_SPEED_FAST     3
+      | 
+In file included from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:30,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:654: note: this is the location of the previous definition
+  654 | #define  GPIO_SPEED_FAST                          GPIO_SPEED_FREQ_HIGH
+      | 
+In file included from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/F446RE.h:543,
+                 from C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/apds9960.h:11,
+                 from ../Core/Src/main.c:3:
+C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/Fire_F446RE/Drivers/F446RE/inc/gpio_driver.h:77: warning: "GPIO_SPEED_HIGH" redefined
+   77 | #define GPIO_SPEED_HIGH     4
+      | 
+In file included from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:30,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:1:
+../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:655: note: this is the location of the previous definition
+  655 | #define  GPIO_SPEED_HIGH                          GPIO_SPEED_FREQ_VERY_HIGH
+      | 
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:173:50: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  173 |     USART_SendData(&usart2_handle,(uint8_t*)Test,strlen(Test));
+      |                                                  ^~~~~~
+../Core/Src/main.c:173:50: warning: incompatible implicit declaration of built-in function 'strlen'
+../Core/Src/main.c:11:1: note: include '<string.h>' or provide a declaration of 'strlen'
+   10 | #include "fire_data.h"
+  +++ |+#include <string.h>
+   11 | 
+../Core/Src/main.c:175:9: warning: implicit declaration of function 'strcmp' [-Wimplicit-function-declaration]
+  175 |     if (strcmp(Reply, "OK")){
+      |         ^~~~~~
+arm-none-eabi-gcc -o "Fire_F446RE.elf" @"objects.list"  -l:NetworkRuntime520_CM4_GCC.a -mcpu=cortex-m4 -T"C:\Users\SOUMYA\Desktop\Fire-Gaurd\Fire_classifier_CubeIDE\Fire_F446RE\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Fire_F446RE.map" -Wl,--gc-sections -static -L../Middlewares/ST/AI/Lib -u_printf_float --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Fire_F446RE.elf
+ 
+arm-none-eabi-size   Fire_F446RE.elf 
+arm-none-eabi-objdump -h -S  Fire_F446RE.elf  > "Fire_F446RE.list"
    text	   data	    bss	    dec	    hex	filename
-  36016	   2200	   2992	  41208	   a0f8	Fire_L432KC.elf
+  33888	   2220	   2908	  39016	   9868	Fire_F446RE.elf
 Finished building: default.size.stdout
+ 
+Finished building: Fire_F446RE.list
  

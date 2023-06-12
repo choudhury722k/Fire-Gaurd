@@ -1,0 +1,159 @@
+/*
+ * apds9960.c
+ *
+ *  Created on: Jun 12, 2023
+ *      Author: SOUMYA
+ */
+
+#include<stdint.h>
+#include<string.h>
+
+#include "apds9960.h"
+
+I2C_Handle_t g_apds9960_I2cHandle;
+
+//returns 1 : CH = 1 ; init failed
+//returns 0 : CH = 0 ; init success
+uint8_t APDS9960_RGB_INIT(void){
+
+	//1. init the i2c pins
+
+	GPIO_Handle_t i2c_sda,i2c_scl;
+
+	memset(&i2c_sda,0,sizeof(i2c_sda));
+	memset(&i2c_scl,0,sizeof(i2c_scl));
+
+	/*
+	 * I2C1_SCL ==> PB6
+	 * I2C1_SDA ==> PB7
+	 */
+
+	i2c_sda.pGPIOx = APDS9960_I2C_GPIO_PORT;
+	i2c_sda.GPIO_PinConfig.GPIO_PinAltFunMode = 4;
+	i2c_sda.GPIO_PinConfig.GPIO_PinMode = GPIO_MODE_ALTFN;
+	i2c_sda.GPIO_PinConfig.GPIO_PinNumber = APDS9960_I2C_SDA_PIN;
+	i2c_sda.GPIO_PinConfig.GPIO_PinOPType = GPIO_OP_TYPE_OD;
+	i2c_sda.GPIO_PinConfig.GPIO_PinPuPdControl = APDS9960_I2C_PUPD;
+	i2c_sda.GPIO_PinConfig.GPIO_PinSpeed = GPIO_SPEED_FAST;
+	GPIO_Init(&i2c_sda);
+
+	i2c_scl.pGPIOx = APDS9960_I2C_GPIO_PORT;
+	i2c_scl.GPIO_PinConfig.GPIO_PinAltFunMode = 4;
+	i2c_scl.GPIO_PinConfig.GPIO_PinMode = GPIO_MODE_ALTFN;
+	i2c_scl.GPIO_PinConfig.GPIO_PinNumber = APDS9960_I2C_SCL_PIN;
+	i2c_scl.GPIO_PinConfig.GPIO_PinOPType = GPIO_OP_TYPE_OD;
+	i2c_scl.GPIO_PinConfig.GPIO_PinPuPdControl = APDS9960_I2C_PUPD;
+	i2c_scl.GPIO_PinConfig.GPIO_PinSpeed = GPIO_SPEED_FAST;
+	GPIO_Init(&i2c_scl);
+
+	//2. initialize the i2c peripheral
+	g_apds9960_I2cHandle.pI2Cx = APDS9960_I2C;
+	g_apds9960_I2cHandle.I2C_Config.I2C_AckControl = I2C_ACK_ENABLE;
+	g_apds9960_I2cHandle.I2C_Config.I2C_SCLSpeed = APDS9960_I2C_SPEED;
+	I2C_Init(&g_apds9960_I2cHandle);
+
+	//3. Enable the I2C peripheral
+	I2C_PeripheralControl(APDS9960_I2C, ENABLE);
+
+	// Determine the ATIME register. By default, when the module starts, the ATIME register is set to 0xFF
+	// and if nothing is changed, this will affect the sensitivity of the sensor - the sensitivity will be low.
+	APDS9960_write(DEFAULT_ATIME, APDS9960_ATIME);
+
+	// the next step is to set the AGAIN parameter field (ALS and Color Gain Control)
+	// of the Control Register One register (0x8F) to the value corresponding to the gain equal to x4
+	// (DEFAULT_AGAIN equal to AGAIN_4X)
+	APDS9960_write(DEFAULT_AGAIN, APDS9960_CONTROL);
+
+	// enable the ALS option by setting the AEN bit of the Enable Register register (0x80)
+	// turn on the module power supply by setting the PON bit of the same register
+	APDS9960_write((APDS9960_PON | APDS9960_AEN), APDS9960_ENABLE);
+
+	uint8_t x = APDS9960_read(APDS9960_ID);
+	if (x != 0xAB) {
+		return false;
+	}
+
+	return true;
+
+}
+
+void APDS9960_write(uint8_t value, uint8_t reg_addr){
+	uint8_t tx[2];
+	tx[0] = reg_addr;
+	tx[1] = value;
+	I2C_MasterSendData(&g_apds9960_I2cHandle, tx, 2, APDS9960_I2C_ADDR, 0);
+}
+
+uint8_t APDS9960_read(uint8_t reg_addr){
+	uint8_t data;
+    I2C_MasterSendData(&g_apds9960_I2cHandle, &reg_addr, 1, APDS9960_I2C_ADDR, 0);
+    I2C_MasterReceiveData(&g_apds9960_I2cHandle, &data, 1, APDS9960_I2C_ADDR, 0);
+
+    return data;
+}
+
+uint16_t APDS9960_readAmbientLight(){
+    uint8_t buffer[ 2 ];
+    uint16_t result;
+
+    buffer[ 0 ] = APDS9960_read( APDS9960_CDATAH );
+    buffer[ 1 ] = APDS9960_read( APDS9960_CDATAL );
+
+    result = buffer[ 0 ];
+    result <<= 8;
+    result |= buffer[ 1 ];
+
+    return result;
+}
+
+/* Read RED light data function */
+uint16_t APDS9960_readRedLight(){
+    uint8_t buffer[ 2 ];
+    uint16_t result;
+
+    buffer[ 0 ] = APDS9960_read( APDS9960_RDATAH );
+    buffer[ 1 ] = APDS9960_read( APDS9960_RDATAL );
+
+    result = buffer[ 0 ];
+    result <<= 8;
+    result |= buffer[ 1 ];
+
+    return result;
+}
+
+/* Read GREEN light data function */
+uint16_t APDS9960_readGreenLight(){
+    uint8_t buffer[ 2 ];
+    uint16_t result;
+
+    buffer[ 0 ] = APDS9960_read( APDS9960_GDATAH );
+    buffer[ 1 ] = APDS9960_read( APDS9960_GDATAL );
+
+    result = buffer[ 0 ];
+    result <<= 8;
+    result |= buffer[ 1 ];
+
+    return result;
+}
+
+/* Read BLUE light data function */
+uint16_t APDS9960_readBlueLight(){
+    uint8_t buffer[ 2 ];
+    uint16_t result;
+
+    buffer[ 0 ] = APDS9960_read( APDS9960_BDATAH );
+    buffer[ 1 ] = APDS9960_read( APDS9960_BDATAL );
+
+    result = buffer[ 0 ];
+    result <<= 8;
+    result |= buffer[ 1 ];
+
+    return result;
+}
+
+void APDS9960_RGB_value(color_handle_t *rgb_c_data){
+	rgb_c_data->Colour_Clear =  APDS9960_readAmbientLight();
+	rgb_c_data->Colour_Red =  APDS9960_readRedLight();
+	rgb_c_data->Colour_Green =  APDS9960_readGreenLight();
+	rgb_c_data->Colour_Blue =  APDS9960_readBlueLight();
+}

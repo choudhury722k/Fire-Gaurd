@@ -70,7 +70,9 @@ int main(void){
 
   color_handle_t current_RGB;
 
-  APDS9960_RGB_INIT();
+  if(APDS9960_RGB_INIT()){
+	  printf("\r\n\r\nAPDS-9960 Initialized\r\n");
+  }
 
   USART2_GPIOInit();
   USART2_Init();

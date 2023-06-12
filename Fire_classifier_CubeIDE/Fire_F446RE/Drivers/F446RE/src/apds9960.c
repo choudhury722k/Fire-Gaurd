@@ -68,13 +68,12 @@ uint8_t APDS9960_RGB_INIT(void){
 	// turn on the module power supply by setting the PON bit of the same register
 	APDS9960_write((APDS9960_PON | APDS9960_AEN), APDS9960_ENABLE);
 
-//	//4. Make clock halt = 0;
-//	ds1307_write(0x00,DS1307_ADDR_SEC);
-//
-//	//5. Read back clock halt bit
-//	uint8_t clock_state = ds1307_read(DS1307_ADDR_SEC);
-//
-//	return ((clock_state >> 7 ) & 0x1);
+	uint8_t x = APDS9960_read(APDS9960_ID);
+	if (x != 0xAB) {
+		return 0;
+	}
+
+	return 1;
 
 }
 

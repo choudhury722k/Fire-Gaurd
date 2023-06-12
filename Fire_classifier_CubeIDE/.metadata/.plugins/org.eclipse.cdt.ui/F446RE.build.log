@@ -1,50 +1,16 @@
-14:26:31 **** Build of configuration Debug for project F446RE ****
+00:56:47 **** Build of configuration Debug for project F446RE ****
 make -j12 all 
-arm-none-eabi-gcc "../bsp/apds9960.c" -mcpu=cortex-m4 -std=gnu11 -g -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -c -I../Inc -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/004Driver/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"bsp/apds9960.d" -MT"bsp/apds9960.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "bsp/apds9960.o"
-arm-none-eabi-gcc "../bsp/ds1307.c" -mcpu=cortex-m4 -std=gnu11 -g -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -c -I../Inc -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/004Driver/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"bsp/ds1307.d" -MT"bsp/ds1307.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "bsp/ds1307.o"
-arm-none-eabi-gcc "../bsp/lcd.c" -mcpu=cortex-m4 -std=gnu11 -g -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -c -I../Inc -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/004Driver/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"bsp/lcd.d" -MT"bsp/lcd.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "bsp/lcd.o"
-arm-none-eabi-gcc -mcpu=cortex-m4 -g -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f446retx.d" -MT"Startup/startup_stm32f446retx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32f446retx.o" "../Startup/startup_stm32f446retx.s"
-arm-none-eabi-gcc "../Src/017RTC.c" -mcpu=cortex-m4 -std=gnu11 -g -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -c -I../Inc -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/004Driver/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/017RTC.d" -MT"Src/017RTC.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/017RTC.o"
-arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -c -I../Inc -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/004Driver/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
-arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -c -I../Inc -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/004Driver/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
-arm-none-eabi-gcc "../Drivers/Src/gpio_driver.c" -mcpu=cortex-m4 -std=gnu11 -g -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -c -I../Inc -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/004Driver/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/Src/gpio_driver.d" -MT"Drivers/Src/gpio_driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/Src/gpio_driver.o"
-arm-none-eabi-gcc "../Drivers/Src/i2c_driver.c" -mcpu=cortex-m4 -std=gnu11 -g -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -c -I../Inc -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/004Driver/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/Src/i2c_driver.d" -MT"Drivers/Src/i2c_driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/Src/i2c_driver.o"
-arm-none-eabi-gcc "../Drivers/Src/rcc_driver.c" -mcpu=cortex-m4 -std=gnu11 -g -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -c -I../Inc -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/004Driver/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/Src/rcc_driver.d" -MT"Drivers/Src/rcc_driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/Src/rcc_driver.o"
-arm-none-eabi-gcc "../Drivers/Src/spi_driver.c" -mcpu=cortex-m4 -std=gnu11 -g -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -c -I../Inc -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/004Driver/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/Src/spi_driver.d" -MT"Drivers/Src/spi_driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/Src/spi_driver.o"
-arm-none-eabi-gcc "../Drivers/Src/uart_driver.c" -mcpu=cortex-m4 -std=gnu11 -g -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -c -I../Inc -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/004Driver/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/Src/uart_driver.d" -MT"Drivers/Src/uart_driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/Src/uart_driver.o"
-../bsp/apds9960.c: In function 'APDS9960_RGB_INIT':
-../bsp/apds9960.c:79:1: warning: control reaches end of non-void function [-Wreturn-type]
-   79 | }
-      | ^
-../Src/017RTC.c:10:10: fatal error: ds1307.h: No such file or directory
-   10 | #include "ds1307.h"
-      |          ^~~~~~~~~~
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f446retx.d" -MT"Startup/startup_stm32f446retx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32f446retx.o" "../Startup/startup_stm32f446retx.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -c -I../Inc -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/F446RE/Drivers" -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/F446RE/X-CUBE-AI" -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/F446RE/Middlewares" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -c -I../Inc -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/F446RE/Drivers" -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/F446RE/X-CUBE-AI" -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/F446RE/Middlewares" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -c -I../Inc -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/F446RE/Drivers" -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/F446RE/X-CUBE-AI" -I"C:/Users/SOUMYA/Desktop/Fire-Gaurd/Fire_classifier_CubeIDE/F446RE/Middlewares" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
+../Src/main.c:22:10: fatal error: ai_datatypes_defines.h: No such file or directory
+   22 | #include "ai_datatypes_defines.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
 compilation terminated.
-make: *** [Src/subdir.mk:25: Src/017RTC.o] Error 1
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
 make: *** Waiting for unfinished jobs....
-../Drivers/Src/spi_driver.c: In function 'SPI_SendDataIT':
-../Drivers/Src/spi_driver.c:152:13: warning: statement with no effect [-Wunused-value]
-  152 |   pSPIHandle->pTxBuffer;
-      |   ~~~~~~~~~~^~~~~~~~~~~
-../Drivers/Src/spi_driver.c:153:13: warning: statement with no effect [-Wunused-value]
-  153 |   pSPIHandle->TxLen;
-      |   ~~~~~~~~~~^~~~~~~
-../Drivers/Src/spi_driver.c:156:23: warning: statement with no effect [-Wunused-value]
-  156 |   pSPIHandle->TxState - SPI_BUSY_IN_TX;
-../Drivers/Src/spi_driver.c: In function 'SPI_RecieveDataIT':
-../Drivers/Src/spi_driver.c:167:13: warning: statement with no effect [-Wunused-value]
-  167 |   pSPIHandle->pRxBuffer;
-      |   ~~~~~~~~~~^~~~~~~~~~~
-../Drivers/Src/spi_driver.c:168:13: warning: statement with no effect [-Wunused-value]
-  168 |   pSPIHandle->RxLen;
-      |   ~~~~~~~~~~^~~~~~~
-../Drivers/Src/spi_driver.c:171:23: warning: statement with no effect [-Wunused-value]
-  171 |   pSPIHandle->RxState - SPI_BUSY_IN_RX;
-../Drivers/Src/uart_driver.c: In function 'USART_IRQHandling':
-../Drivers/Src/uart_driver.c:331:26: warning: variable 'temp3' set but not used [-Wunused-but-set-variable]
-  331 |  uint32_t temp1 , temp2, temp3;
-      |                          ^~~~~
 "make -j12 all" terminated with exit code 2. Build might be incomplete.
 
-14:26:32 Build Failed. 3 errors, 8 warnings. (took 630ms)
+00:56:48 Build Failed. 3 errors, 0 warnings. (took 1s.132ms)
 

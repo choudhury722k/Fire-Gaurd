@@ -15,3 +15,6 @@
 1686564309366	Delete resource 'Test_NUCLEO_L432KC'
 1686564900126	Delete resource '004Driver'
 1686566023551	Rename resource 'Fire_NUCLEO_L432KC'
+1686597797827	Delete resource 'F446RE/Drivers/CMSIS'
+1686597803711	Delete resource 'F446RE/Drivers/STM32F4xx_HAL_Driver'
+1686598048090	Delete resource 'F446RE'

@@ -1,8 +1,8 @@
-../Drivers/F446RE/src/apds9960.c:17:9:APDS9960_RGB_INIT	32	static
-../Drivers/F446RE/src/apds9960.c:81:6:APDS9960_write	32	static
-../Drivers/F446RE/src/apds9960.c:88:9:APDS9960_read	32	static
-../Drivers/F446RE/src/apds9960.c:96:10:APDS9960_readAmbientLight	16	static
-../Drivers/F446RE/src/apds9960.c:111:10:APDS9960_readRedLight	16	static
-../Drivers/F446RE/src/apds9960.c:126:10:APDS9960_readGreenLight	16	static
-../Drivers/F446RE/src/apds9960.c:141:10:APDS9960_readBlueLight	16	static
-../Drivers/F446RE/src/apds9960.c:155:6:APDS9960_RGB_value	16	static
+../Drivers/F446RE/src/apds9960.c:17:9:APDS9960_RGB_INIT	40	static
+../Drivers/F446RE/src/apds9960.c:80:6:APDS9960_write	32	static
+../Drivers/F446RE/src/apds9960.c:87:9:APDS9960_read	32	static
+../Drivers/F446RE/src/apds9960.c:95:10:APDS9960_readAmbientLight	16	static
+../Drivers/F446RE/src/apds9960.c:110:10:APDS9960_readRedLight	16	static
+../Drivers/F446RE/src/apds9960.c:125:10:APDS9960_readGreenLight	16	static
+../Drivers/F446RE/src/apds9960.c:140:10:APDS9960_readBlueLight	16	static
+../Drivers/F446RE/src/apds9960.c:154:6:APDS9960_RGB_value	16	static

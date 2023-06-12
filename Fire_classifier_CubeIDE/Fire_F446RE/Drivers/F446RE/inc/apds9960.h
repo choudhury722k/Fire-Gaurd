@@ -20,6 +20,8 @@
 
 #define APDS9960_I2C_ADDR       0x39
 
+#define APDS9960_ID             0x92
+
 #define APDS9960_ATIME          0x81
 #define APDS9960_CONTROL        0x8F
 #define APDS9960_ENABLE         0x80
